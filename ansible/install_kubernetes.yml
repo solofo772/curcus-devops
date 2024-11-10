@@ -29,7 +29,7 @@
   - name: update all packages
     apt:
       name: '*'
-      update_only: yes
+      only_upgrade: yes
       update_cache: yes
       state: latest
 
