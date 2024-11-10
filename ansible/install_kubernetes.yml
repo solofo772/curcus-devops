@@ -27,14 +27,14 @@
     kubernetes_allow_pods_on_master: true
   pre_tasks:
   - name: update all packages
-    yum:
+    apt:
       name: '*'
       update_only: yes
       update_cache: yes
       state: latest
 
   - name: Install epel release
-    yum:
+    apt:
       name: epel-release
       state: installed
 
