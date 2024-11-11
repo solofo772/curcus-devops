@@ -12,6 +12,3 @@
 
 # Install jenkins
 - src: geerlingguy.jenkins
-
-# Install kubenretes
-- src: geerlingguy.kubernetes
