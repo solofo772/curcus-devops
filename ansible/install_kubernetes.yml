@@ -29,15 +29,8 @@
   - name: update all packages
     apt:
       name: '*'
-      only_upgrade: yes
+      only_upgrade: no
       update_cache: yes
-      state: latest
-
-  - name: Install epel release
-    apt:
-      name: epel-release
-      state: installed
-
 
   roles:
     - role: geerlingguy.pip
